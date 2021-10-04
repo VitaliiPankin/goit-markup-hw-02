@@ -71,6 +71,9 @@ p {
 .link-contacs {
   color: var(--primery-text-color);
 }
+.link-portfolio {
+  color: var(--acsent-color);
+}
 .button {
   background-color: var(--color-logo);
   border: none;
