@@ -5,54 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-02</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <nav>
-        <a href="/">Web Studio</a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="/portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <a href="/" class="logo"><span class="logo-color">Web</span>Studio</a>
+        <ul class="site-nav">
+          <li><a class="link" href="">Студия</a></li>
+          <li><a class="link" href="/portfolio.html">Портфолио</a></li>
+          <li><a class="link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="auth-nav">
+        <li>
+          <a class="link link-contacs" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="link link-contacs" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+      <section class="hero">
+        <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
+        <button class="button button-text" type="button">
+          Заказать услугу
+        </button>
       </section>
       <section>
         <h2>Особености</h2>
-        <ul>
+        <ul class="peculiarities">
           <li>
-            <h3>Внимание к деталям</h3>
-            <p>
+            <h3 class="peculiarities-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+            <p class="peculiarities-paragraph">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
-            <p>
+            <h3 class="peculiarities-title">ПУНКТКАЛЬНОСТЬ</h3>
+            <p class="peculiarities-paragraph">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
-            <p>
+            <h3 class="peculiarities-title">ПЛАНИРОВАНИЕ</h3>
+            <p class="peculiarities-paragraph">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
-            <p>
+            <h3 class="peculiarities-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+            <p class="peculiarities-paragraph">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -60,7 +75,7 @@
         </ul>
       </section>
       <section>
-        <h2>Чем мы занимаемся</h2>
+        <h2 class="products-title">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img
@@ -88,8 +103,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Наша команда</h2>
+      <section class="command">
+        <h2 class="command-title">Наша команда</h2>
         <ul>
           <li>
             <img
@@ -98,8 +113,8 @@
               height="260"
               alt="Игорь Демьяненко"
             />
-            <h3>Игорь Демьяненко</h3>
-            <p lang="en">Product Designer</p>
+            <h3 class="command-name-title">Игорь Демьяненко</h3>
+            <p class="command-paragraph" lang="en">Product Designer</p>
           </li>
           <li>
             <img
@@ -108,8 +123,8 @@
               height="260"
               alt="Ольга Репина"
             />
-            <h3>Ольга Репина</h3>
-            <p lang="en">Frontend Developer</p>
+            <h3 class="command-name-title">Ольга Репина</h3>
+            <p class="command-paragraph" lang="en">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -118,8 +133,8 @@
               height="260"
               alt="Николай Тарасов"
             />
-            <h3>Николай Тарасов</h3>
-            <p lang="en">Marketing</p>
+            <h3 class="command-name-title">Николай Тарасов</h3>
+            <p class="command-paragraph" lang="en">Marketing</p>
           </li>
           <li>
             <img
@@ -128,27 +143,38 @@
               height="260"
               alt="Михаил Ермаков"
             />
-            <h3>Михаил Ермаков</h3>
-            <p lang="en">UI Designer</p>
+            <h3 class="command-name-title">Михаил Ермаков</h3>
+            <p class="command-paragraph" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <a href="/">Web Studio</a>
+      <a href="/" class="logo-footer"
+        ><span class="logo-color-footer">Web</span>Studio
+      </a>
 
-      <address>
+      <address class="company-address">
         <ul>
           <li>
             <a
+              class="company-address-link"
               href="https://goo.gl/maps/QHeTT9nwSXY6Y2y69"
               target="_blank"
               rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li>
+            <a class="company-contacts" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="company-contacts" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
