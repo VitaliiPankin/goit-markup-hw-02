@@ -6,6 +6,7 @@
   --background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --third-background-color: #f5f4fa;
+  --button-hover-color: #188ce8;
 }
 
 body {
@@ -24,15 +25,6 @@ ul {
 p {
   color: var(--primery-text-color);
 }
-
-/* цвет color: #212121;*/
-/* вторичный цвет color: #757575; */
-/* доп цвет  color: #FFFFFF;*/
-/* доп цвет 2  color: rgba(255, 255, 255, 0.6);*/
-/* цвет лого и акцент синий color: #2196F3;*/
-/* цвет лого черный color: color: #212121;*/
-/* цвет фона background: #FFFFFF; */
-/* цвет фона вторичный background: #2F303A; */
 
 .logo {
   font-family: Raleway;
@@ -79,6 +71,10 @@ p {
   border: none;
   height: 50px;
   border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--button-hover-color);
 }
 
 .button-text {
