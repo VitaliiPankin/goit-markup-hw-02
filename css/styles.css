@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   color: var(--title-text-color);
   font-family: "Roboto", sans-serif;
 }
@@ -18,6 +18,7 @@ a {
   text-decoration: none;
   color: var(--title-text-color);
   font-style: normal;
+  outline: none;
 }
 ul {
   list-style: none;
@@ -63,7 +64,7 @@ p {
 .link-contacs {
   color: var(--primery-text-color);
 }
-.link-portfolio {
+.link-active {
   color: var(--acsent-color);
 }
 .button {
@@ -81,7 +82,7 @@ p {
   color: var(--background-color);
   font-weight: bold;
   font-size: 16px;
-  line-height: 187%;
+  line-height: 1.8em;
 
   display: flex;
   align-items: center;
@@ -90,10 +91,11 @@ p {
 }
 .buttons-secondary {
   height: 38px;
-  background-color: var(--third-background-color: #f5f4fa;);
+  background-color: var(--third-background-color);
   border: none;
   border-radius: 4px;
 }
+
 .buttons-secondary:hover,
 .buttons-secondary:focus {
   color: var(--background-color);
@@ -131,8 +133,6 @@ p {
   line-height: 171%;
 }
 
-.products {
-}
 .products-title {
   font-weight: bold;
   font-size: 36px;
@@ -171,8 +171,7 @@ footer {
 .logo-color-footer {
   color: var(--acsent-color);
 }
-.company-address {
-}
+
 .company-address-link {
   font-size: 14px;
   line-height: 171%;
