@@ -3,12 +3,15 @@
   --primery-text-color: #757575;
   --acsent-color: #2196f3;
   --color-logo: #2196f3;
+  --logo-color-studio: #212121;
+  --logo-color-studio-footer: #ffffff;
+  --logo-color-web: #2196f3;
   --background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --third-background-color: #f5f4fa;
   --button-hover-color: #188ce8;
 }
-
+/* -------------BODY------------- */
 body {
   background-color: var(--background-color);
   color: var(--title-text-color);
@@ -26,25 +29,42 @@ ul {
 p {
   color: var(--primery-text-color);
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* --------------LOGO-------------- */
 
 .logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
-.logo-color {
-  color: var(--acsent-color);
+.logo-color-web {
+  color: var(--logo-color-web);
+}
+.logo-color-studio {
+  color: var(--logo-color-studio);
 }
 
+/* ---------NAVIGATION----------- */
 .site-nav {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -55,7 +75,7 @@ p {
 .auth-nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -67,6 +87,8 @@ p {
 .link-active {
   color: var(--acsent-color);
 }
+
+/* -------------BUTTONs-------------- */
 .button {
   background-color: var(--color-logo);
   border: none;
@@ -80,11 +102,10 @@ p {
 
 .button-text {
   color: var(--background-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.8em;
-
-  display: flex;
+  line-height: 1.87;
+  isplay: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -105,9 +126,11 @@ p {
 .buttons-secondary-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 162%;
+  line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
 }
+/* ----------------HERO---------------- */
 .hero {
   background-color: var(--secondary-background-color);
 }
@@ -116,29 +139,34 @@ p {
   height: 120px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 136%;
+  line-height: 1.36;
   color: var(--background-color);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
+/* --------------PECULIARITIES----------------- */
 .peculiarities-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 114%;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .peculiarities-paragraph {
+  font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .products-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
-
+/* -----------------COMMANDs------------------- */
 .command {
   background-color: var(--third-background-color);
 }
@@ -146,40 +174,50 @@ p {
 .command-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 1.16;
 }
 .command-name-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 118%;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 .command-paragraph {
+  font-weight: 400;
   font-size: 16px;
-  line-height: 118%;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
+/* -------------FOOTER------------ */
 footer {
   background-color: var(--secondary-background-color);
 }
 .logo-footer {
-  color: var(--background-color);
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 119%;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
-.logo-color-footer {
-  color: var(--acsent-color);
+.logo-color-studio-footer {
+  color: var(--logo-color-studio-footer);
 }
 
 .company-address-link {
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   color: var(--background-color);
+  letter-spacing: 0.03em;
 }
-
+.a-c-hover-focus:focus,
+.a-c-hover-focus:hover {
+  color: var(--acsent-color);
+}
 .company-contacts {
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
   color: rgba(255, 255, 255, 0.6);
 }
