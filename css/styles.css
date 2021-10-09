@@ -21,7 +21,6 @@ a {
   text-decoration: none;
   color: var(--title-text-color);
   font-style: normal;
-  outline: none;
 }
 ul {
   list-style: none;
@@ -94,6 +93,7 @@ p {
   border: none;
   height: 50px;
   border-radius: 4px;
+  cursor: pointer;
 }
 .button:hover,
 .button:focus {
@@ -115,6 +115,11 @@ p {
   background-color: var(--third-background-color);
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+}
+.active-btn {
+  background-color: var(--button-hover-color);
+  color: var(--background-color);
 }
 
 .buttons-secondary:hover,
